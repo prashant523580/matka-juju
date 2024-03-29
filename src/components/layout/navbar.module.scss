@@ -1,0 +1,76 @@
+.nav{
+    background-color: rgb(229, 228, 233);
+    // height: 10vh;
+    // color: orange;
+    // width: 280px;
+    display: flex;
+    padding: .8em .6em;
+    .cate{
+        // background-color: red;
+        margin: .3em 0;
+        padding: 0 .3em;
+        position: relative;
+        div > span{
+            transition: all .6s ease;
+        }
+        &:hover{
+            overflow: visible;
+        }
+        &:hover  > div > span {
+            // margin-left: 2px;
+            color: rgb(1, 88, 62);
+            // background-color: rgb(2,n 2, 94);
+        }
+        &:hover > div > span:last-child{
+            transform: rotate(90deg);
+
+        }
+        &:hover .catedropdown{
+            overflow: visible;
+            top: 35px;
+            opacity: 1;
+            height: auto;
+        }
+        .catedropdown{
+            position: absolute;
+            
+            width: 200px;
+            left: 0px;
+            top: 100px;
+            background-color: rgb(230, 238, 230);
+            transition: .6s ease;
+            overflow: hidden;
+            opacity: 0;
+            height: 0;
+            z-index: 2;
+            .subcate{
+                padding: 0 .3em;
+                margin: .4em 0;
+                position: relative;
+                &:hover div > span {
+                    color: green;
+                    margin-left: 2px;
+                }
+                &:hover .subcatedropdown{
+                    width: 280px;
+                    // opacity: 1;
+                    // overflow: visible;
+                }
+                .subcatedropdown{
+                    background-color: rgb(229, 241, 239);
+                    // display: none;
+                    // padding: 0 .3em;
+                    // margin: .4em 0;
+                    position: absolute;
+                    transition: 1s ease;
+                    // display: none;
+                    width: 0px;
+                    left: 100%;
+                    // opacity: 0;
+                    top: 0;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+}

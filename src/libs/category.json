@@ -1,0 +1,1564 @@
+[
+    {
+        "id": 1,
+        "slug": "business-card",
+        "name": "Business Card",
+        "categories": [
+            {
+                "id": 2,
+                "slug": "standard",
+                "name": "Standard",
+                "products": [
+                    {
+                        "id": 1,
+                        "slug": "business-single-side",
+                        "name": "Business Card - Single Side"
+                    },
+                    {
+                        "id": 4,
+                        "slug": "business-both-side",
+                        "name": "Business Card - Both Side"
+                    }
+                ]
+            },
+            {
+                "id": 12,
+                "slug": "metallic-texture",
+                "name": "Metallic Texture",
+                "products": [
+                    {
+                        "id": 2,
+                        "slug": "metallic-single-side",
+                        "name": "Metallic Card - Single Side"
+                    },
+                    {
+                        "id": 3,
+                        "slug": "metallic-both-side",
+                        "name": "Metallic Card - Both Side"
+                    }
+                ]
+            },
+            {
+                "id": 1078,
+                "slug": "lokta",
+                "name": "Lokta  ",
+                "products": [
+                    {
+                        "id": 3233,
+                        "slug": "lokta-single-side",
+                        "name": "Lokta Business Card- Single Side"
+                    },
+                    {
+                        "id": 3232,
+                        "slug": "lokta-both-side",
+                        "name": "Lokta Business Card- Both Side"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "slug": "stationery",
+        "name": "Stationery",
+        "categories": [
+            {
+                "id": 13,
+                "slug": "letterhead",
+                "name": "Letterhead",
+                "products": [
+                    {
+                        "id": 5,
+                        "slug": "letter-standard",
+                        "name": "Letterhead - Standard"
+                    }
+                ]
+            },
+            {
+                "id": 15,
+                "slug": "certificates",
+                "name": "Certificates",
+                "products": [
+                    {
+                        "id": 7,
+                        "slug": "certificate-standard-A4",
+                        "name": "Certificate - Standard A4"
+                    },
+                    {
+                        "id": 8,
+                        "slug": "certificate-premium-A4",
+                        "name": "Certificate - Premium A4"
+                    },
+                    {
+                        "id": 3216,
+                        "slug": "certificate-standard-12x18",
+                        "name": "Certificate - Standard 12x18"
+                    },
+                    {
+                        "id": 3217,
+                        "slug": "certificate-premium-12x18",
+                        "name": "Certificate - Premium 12X18"
+                    }
+                ]
+            },
+            {
+                "id": 17,
+                "slug": "id-card",
+                "name": "ID Card",
+                "products": [
+                    {
+                        "id": 3225,
+                        "slug": "rfid",
+                        "name": "RFID"
+                    },
+                    {
+                        "id": 15,
+                        "slug": "id-single-side",
+                        "name": "ID Card PVC Gloss - Single Side"
+                    },
+                    {
+                        "id": 16,
+                        "slug": "id-bothside",
+                        "name": "ID CARD PVC Gloss - Bothside"
+                    },
+                    {
+                        "id": 17,
+                        "slug": "id-matte-both",
+                        "name": "ID CARD PVC Matte - Bothside"
+                    },
+                    {
+                        "id": 18,
+                        "slug": "id-hard-paper-both",
+                        "name": "ID CARD Hard Paper - Bothside"
+                    }
+                ]
+            },
+            {
+                "id": 18,
+                "slug": "id-holder",
+                "name": "ID Holder",
+                "products": [
+                    {
+                        "id": 1023,
+                        "slug": "soft-id-holder",
+                        "name": "Soft ID Card Holder"
+                    },
+                    {
+                        "id": 1024,
+                        "slug": "id-holder-b1-a1",
+                        "name": "ID Holder - B1 & A1"
+                    },
+                    {
+                        "id": 1025,
+                        "slug": "zipper-id",
+                        "name": "Zipper ID Holder"
+                    },
+                    {
+                        "id": 1026,
+                        "slug": "sakura-id",
+                        "name": "Sakura ID holder - Clip"
+                    },
+                    {
+                        "id": 1027,
+                        "slug": "hard-pvc-id-holder",
+                        "name": "Hard PVC ID Holder"
+                    },
+                    {
+                        "id": 1028,
+                        "slug": "metal-id-holder",
+                        "name": "Metal  ID Holder"
+                    },
+                    {
+                        "id": 3226,
+                        "slug": "hard-pvcpid-transparent",
+                        "name": "Hard PVC ID Holder- Transparent White"
+                    }
+                ]
+            },
+            {
+                "id": 19,
+                "slug": "id-belt-lanyard",
+                "name": "ID Belt Lanyard",
+                "products": [
+                    {
+                        "id": 19,
+                        "slug": "lanyard-digital",
+                        "name": "Lanyard 20 MM - Digital Print"
+                    },
+                    {
+                        "id": 20,
+                        "slug": "id-belt-15mm-plain",
+                        "name": "ID Belt 15 MM - Plain"
+                    },
+                    {
+                        "id": 21,
+                        "slug": "clip-id-holder",
+                        "name": "Clip ID Holder"
+                    },
+                    {
+                        "id": 22,
+                        "slug": "pocket-round-sprint",
+                        "name": "Pocket Round Sprint ID Holder"
+                    }
+                ]
+            },
+            {
+                "id": 1040,
+                "slug": "envelope",
+                "name": "Envelope",
+                "products": [
+                    {
+                        "id": 3091,
+                        "slug": "standard-envalope-with-1-color",
+                        "name": "Standard Envelope with 1 color Screen Print"
+                    },
+                    {
+                        "id": 3092,
+                        "slug": "standard-envalope-with-1-color-9x4",
+                        "name": "9X4 Envelope with 1 color Screen print"
+                    },
+                    {
+                        "id": 3093,
+                        "slug": "standard-envalope-with-1-color-A4",
+                        "name": "A4 Envelope with 1 color screenprint"
+                    },
+                    {
+                        "id": 3098,
+                        "slug": "standard-envalope-with-2-color-9x4",
+                        "name": "9x4 Envelope with 2 color Screen Print"
+                    },
+                    {
+                        "id": 3100,
+                        "slug": "standard-envalope-with-2-color-A4",
+                        "name": "A4 Envelope with 2 color screenprint"
+                    },
+                    {
+                        "id": 3105,
+                        "slug": "a4-envelope-with-multicolor",
+                        "name": "A4 Envelope with Multicolor Print"
+                    },
+                    {
+                        "id": 3106,
+                        "slug": "9x4 envelope with multicolor print",
+                        "name": "9x4 Envelope with Multicolor Print"
+                    }
+                ]
+            },
+            {
+                "id": 1048,
+                "slug": "",
+                "name": "Exercise Copy",
+                "products": [
+                    {
+                        "id": 3137,
+                        "slug": "",
+                        "name": "Exercise Copy 100 pages"
+                    },
+                    {
+                        "id": 3138,
+                        "slug": "",
+                        "name": "Exercise Copy 200 Pages"
+                    }
+                ]
+            },
+            {
+                "id": 1073,
+                "slug": "",
+                "name": "Note",
+                "products": []
+            },
+            {
+                "id": 1074,
+                "slug": "",
+                "name": "Name Badge",
+                "products": []
+            },
+            {
+                "id": 1076,
+                "slug": "",
+                "name": "Bookmark",
+                "products": [
+                    {
+                        "id": 3222,
+                        "slug": "",
+                        "name": "Bookmark- 21x4.95 cm Bothside"
+                    },
+                    {
+                        "id": 3223,
+                        "slug": "",
+                        "name": "Bookmark- 21x4.95 Cm Singleside"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "slug": "",
+        "name": "Marketing Tools",
+        "categories": [
+            {
+                "id": 14,
+                "slug": "",
+                "name": "Brochures",
+                "products": [
+                    {
+                        "id": 3234,
+                        "slug": "",
+                        "name": "Brochure A4 - Singleside"
+                    },
+                    {
+                        "id": 3235,
+                        "slug": "",
+                        "name": "Brochure A4- Bothside- tri fold"
+                    },
+                    {
+                        "id": 6,
+                        "slug": "",
+                        "name": "Brochure A4- Bothside"
+                    }
+                ]
+            },
+            {
+                "id": 16,
+                "slug": "",
+                "name": "Flyers",
+                "products": [
+                    {
+                        "id": 9,
+                        "slug": "",
+                        "name": "Flyer A4 - Single Side"
+                    },
+                    {
+                        "id": 10,
+                        "slug": "",
+                        "name": "Flyer A4 - Both Side"
+                    },
+                    {
+                        "id": 11,
+                        "slug": "",
+                        "name": "Flyer A5 - Single Side"
+                    },
+                    {
+                        "id": 12,
+                        "slug": "",
+                        "name": "Flyer A5 - Both Side"
+                    },
+                    {
+                        "id": 13,
+                        "slug": "",
+                        "name": "Flyer 4x8.5 Inch - Single Side"
+                    },
+                    {
+                        "id": 14,
+                        "slug": "",
+                        "name": "Flyer 4x8.5 Inch - Both Side"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "slug": "",
+        "name": "Business Essentials",
+        "categories": [
+            {
+                "id": 1033,
+                "slug": "",
+                "name": "Diary/Notebook",
+                "products": [
+                    {
+                        "id": 3077,
+                        "slug": "",
+                        "name": "Notebook (Wire Binding)"
+                    }
+                ]
+            },
+            {
+                "id": 1034,
+                "slug": "",
+                "name": "Catalogue",
+                "products": [
+                    {
+                        "id": 3078,
+                        "slug": "",
+                        "name": "Catalogue-16 Page"
+                    }
+                ]
+            },
+            {
+                "id": 1035,
+                "slug": "",
+                "name": "Company Profile",
+                "products": [
+                    {
+                        "id": 3079,
+                        "slug": "",
+                        "name": "Company Profile-12 Page"
+                    }
+                ]
+            },
+            {
+                "id": 1038,
+                "slug": "",
+                "name": "Stamps",
+                "products": [
+                    {
+                        "id": 3083,
+                        "slug": "",
+                        "name": "Normal Stamp"
+                    },
+                    {
+                        "id": 3084,
+                        "slug": "",
+                        "name": "Crystal Handle Stamp"
+                    }
+                ]
+            },
+            {
+                "id": 1049,
+                "slug": "",
+                "name": "Folder",
+                "products": [
+                    {
+                        "id": 3139,
+                        "slug": "",
+                        "name": "Normal Folder with Paper Fastener- Multicolor Print"
+                    },
+                    {
+                        "id": 3140,
+                        "slug": "",
+                        "name": "Single Side Pocket Folder- Multicolor Print"
+                    },
+                    {
+                        "id": 3141,
+                        "slug": "",
+                        "name": "Dual Side Pocket Folder- Multicolor Print"
+                    }
+                ]
+            },
+            {
+                "id": 1051,
+                "slug": "",
+                "name": "Bill Pad",
+                "products": [
+                    {
+                        "id": 3146,
+                        "slug": "",
+                        "name": "Tax Invoice (3 ply) -A4"
+                    },
+                    {
+                        "id": 3214,
+                        "slug": "",
+                        "name": "Invoice A5 3 Ply"
+                    },
+                    {
+                        "id": 3206,
+                        "slug": "",
+                        "name": "Invoice A5 2 Ply"
+                    }
+                ]
+            },
+            {
+                "id": 1066,
+                "slug": "",
+                "name": "Packaging Box",
+                "products": [
+                    {
+                        "id": 3202,
+                        "slug": "",
+                        "name": "Corrugated Box 6x6x6"
+                    },
+                    {
+                        "id": 3203,
+                        "slug": "",
+                        "name": "Corrugated Box 8x8x8"
+                    },
+                    {
+                        "id": 3204,
+                        "slug": "",
+                        "name": "Corrugated Box 10x10x10"
+                    },
+                    {
+                        "id": 3205,
+                        "slug": "",
+                        "name": "Corrugated Box 12x12x12"
+                    }
+                ]
+            },
+            {
+                "id": 1067,
+                "slug": "",
+                "name": "Receipt",
+                "products": [
+                    {
+                        "id": 3212,
+                        "slug": "",
+                        "name": "Receipt 2 ply"
+                    },
+                    {
+                        "id": 3213,
+                        "slug": "",
+                        "name": "Receipt 3 ply"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "slug": "",
+        "name": "Events",
+        "categories": [
+            {
+                "id": 1036,
+                "slug": "",
+                "name": "Posters",
+                "products": [
+                    {
+                        "id": 3081,
+                        "slug": "",
+                        "name": "Poster - Digital Print"
+                    }
+                ]
+            },
+            {
+                "id": 1037,
+                "slug": "",
+                "name": "Tickets",
+                "products": [
+                    {
+                        "id": 3082,
+                        "slug": "",
+                        "name": "Ticket Standard Bothside"
+                    },
+                    {
+                        "id": 3080,
+                        "slug": "",
+                        "name": "Ticket Standard"
+                    }
+                ]
+            },
+            {
+                "id": 1041,
+                "slug": "",
+                "name": "Khada Print",
+                "products": [
+                    {
+                        "id": 3107,
+                        "slug": "",
+                        "name": "khada 8\" wide- Single color screen print"
+                    }
+                ]
+            },
+            {
+                "id": 1042,
+                "slug": "",
+                "name": "Ribbon Badge",
+                "products": [
+                    {
+                        "id": 3108,
+                        "slug": "",
+                        "name": "1Ring Ribbon badge"
+                    },
+                    {
+                        "id": 3109,
+                        "slug": "",
+                        "name": "2 Ring Ribbon Badge"
+                    },
+                    {
+                        "id": 3110,
+                        "slug": "",
+                        "name": "3 Ring Ribbon Badge"
+                    },
+                    {
+                        "id": 3111,
+                        "slug": "",
+                        "name": "4 Ring Ribbon badge"
+                    },
+                    {
+                        "id": 3120,
+                        "slug": "",
+                        "name": "5 Ring Ribbon Badge"
+                    },
+                    {
+                        "id": 3121,
+                        "slug": "",
+                        "name": "6 Ring Ribbbon Badge"
+                    }
+                ]
+            },
+            {
+                "id": 1043,
+                "slug": "",
+                "name": "Standee",
+                "products": [
+                    {
+                        "id": 3122,
+                        "slug": "",
+                        "name": "Normal X Stand 2'x5'"
+                    },
+                    {
+                        "id": 3123,
+                        "slug": "",
+                        "name": "Medium X Stand 2'x5'"
+                    },
+                    {
+                        "id": 3124,
+                        "slug": "",
+                        "name": "Standard X Stand 2'x5'"
+                    },
+                    {
+                        "id": 3127,
+                        "slug": "",
+                        "name": "Roll up Stand 30''x78''"
+                    }
+                ]
+            },
+            {
+                "id": 1046,
+                "slug": "",
+                "name": "Tamrapatra ",
+                "products": [
+                    {
+                        "id": 3130,
+                        "slug": "",
+                        "name": "Tamrapatra 8x10 Inch"
+                    },
+                    {
+                        "id": 3131,
+                        "slug": "",
+                        "name": "Tamrapatra - A4"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "slug": "",
+        "name": "Signage",
+        "categories": [
+            {
+                "id": 1023,
+                "slug": "",
+                "name": "Acrylic Signage",
+                "products": [
+                    {
+                        "id": 1029,
+                        "slug": "",
+                        "name": "Acrylic Signage - Transparent Print "
+                    },
+                    {
+                        "id": 1030,
+                        "slug": "",
+                        "name": "Acrylic Signage - Transparent with spacer"
+                    },
+                    {
+                        "id": 1031,
+                        "slug": "",
+                        "name": "Acrylic Signage - Plottering"
+                    },
+                    {
+                        "id": 1032,
+                        "slug": "",
+                        "name": "Acrylic Signage - Plottering with Spacer"
+                    }
+                ]
+            },
+            {
+                "id": 1024,
+                "slug": "",
+                "name": "Forex Signage",
+                "products": [
+                    {
+                        "id": 1033,
+                        "slug": "",
+                        "name": "Forex Signage - Vinyl with Lamination"
+                    },
+                    {
+                        "id": 1034,
+                        "slug": "",
+                        "name": "Forex Signage - Plottering"
+                    }
+                ]
+            },
+            {
+                "id": 1028,
+                "slug": "",
+                "name": "Sign Board",
+                "products": [
+                    {
+                        "id": 3047,
+                        "slug": "",
+                        "name": "3D Light Board - LED"
+                    },
+                    {
+                        "id": 3048,
+                        "slug": "",
+                        "name": "3D Normal Board"
+                    },
+                    {
+                        "id": 3049,
+                        "slug": "",
+                        "name": "2D Light Board - LED"
+                    },
+                    {
+                        "id": 3050,
+                        "slug": "",
+                        "name": "Glow Sign Board Standard"
+                    },
+                    {
+                        "id": 3051,
+                        "slug": "",
+                        "name": "Glow Sign Board Normal "
+                    },
+                    {
+                        "id": 3052,
+                        "slug": "",
+                        "name": "Acrylic Board With Vinyl Print"
+                    },
+                    {
+                        "id": 3053,
+                        "slug": "",
+                        "name": "Acrylic Board With Plottering "
+                    },
+                    {
+                        "id": 3054,
+                        "slug": "",
+                        "name": "Forex Board With Vinyl Print "
+                    },
+                    {
+                        "id": 3055,
+                        "slug": "",
+                        "name": "Flex Board"
+                    },
+                    {
+                        "id": 3132,
+                        "slug": "",
+                        "name": "Glow Sign Round Box with plottering 18\""
+                    },
+                    {
+                        "id": 3133,
+                        "slug": "",
+                        "name": "Glow Sign Round Box With Plottering 24''"
+                    },
+                    {
+                        "id": 3134,
+                        "slug": "",
+                        "name": "Glow Sign Round Box With Vinyl print 18''"
+                    },
+                    {
+                        "id": 3135,
+                        "slug": "",
+                        "name": "Glow Sign Round Box With Vinyl Print 24''"
+                    },
+                    {
+                        "id": 3089,
+                        "slug": "",
+                        "name": "Golden Steel 3D Letter"
+                    },
+                    {
+                        "id": 3090,
+                        "slug": "",
+                        "name": "Silver Steel 3D Letter"
+                    }
+                ]
+            },
+            {
+                "id": 1047,
+                "slug": "",
+                "name": "Engraving",
+                "products": [
+                    {
+                        "id": 3136,
+                        "slug": "",
+                        "name": "Granite Engraving"
+                    }
+                ]
+            },
+            {
+                "id": 1068,
+                "slug": "",
+                "name": "Letter Cutting",
+                "products": [
+                    {
+                        "id": 3215,
+                        "slug": "",
+                        "name": "Brass Letter- 1.75 inch"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "slug": "",
+        "name": "Gifts & Promotion",
+        "categories": [
+            {
+                "id": 1022,
+                "slug": "",
+                "name": "Mug",
+                "products": [
+                    {
+                        "id": 1022,
+                        "slug": "",
+                        "name": "Mug - White & Large Size"
+                    },
+                    {
+                        "id": 3072,
+                        "slug": "",
+                        "name": "Mug- White Small Size"
+                    },
+                    {
+                        "id": 3073,
+                        "slug": "",
+                        "name": "Magic Mug "
+                    },
+                    {
+                        "id": 3074,
+                        "slug": "",
+                        "name": "Two Tone  Mug"
+                    }
+                ]
+            },
+            {
+                "id": 1044,
+                "slug": "",
+                "name": "Pin Badge",
+                "products": [
+                    {
+                        "id": 3125,
+                        "slug": "",
+                        "name": "Pin Badge - 44 mm"
+                    },
+                    {
+                        "id": 3126,
+                        "slug": "",
+                        "name": "Pin Badge - 58mm "
+                    }
+                ]
+            },
+            {
+                "id": 1045,
+                "slug": "",
+                "name": "Pendrive",
+                "products": [
+                    {
+                        "id": 3128,
+                        "slug": "",
+                        "name": "Card Pendrive 8GB"
+                    },
+                    {
+                        "id": 3129,
+                        "slug": "",
+                        "name": "Card Pendrive 16GB"
+                    }
+                ]
+            },
+            {
+                "id": 1057,
+                "slug": "",
+                "name": "Tea Coaster",
+                "products": [
+                    {
+                        "id": 3150,
+                        "slug": "",
+                        "name": "Forex Coaster - Octagon "
+                    },
+                    {
+                        "id": 3218,
+                        "slug": "",
+                        "name": "Acrylic Coaster- Itching"
+                    }
+                ]
+            },
+            {
+                "id": 1060,
+                "slug": "",
+                "name": "Water Bottle",
+                "products": [
+                    {
+                        "id": 3160,
+                        "slug": "",
+                        "name": "Water Bottle With Print"
+                    }
+                ]
+            },
+            {
+                "id": 1061,
+                "slug": "",
+                "name": "Cushion",
+                "products": [
+                    {
+                        "id": 3162,
+                        "slug": "",
+                        "name": "Fur Cushion"
+                    },
+                    {
+                        "id": 3163,
+                        "slug": "",
+                        "name": "Magic Cushion- Print"
+                    },
+                    {
+                        "id": 3164,
+                        "slug": "",
+                        "name": "Single Side Cushion Print"
+                    },
+                    {
+                        "id": 3166,
+                        "slug": "",
+                        "name": "Cushion Bothside"
+                    }
+                ]
+            },
+            {
+                "id": 1062,
+                "slug": "",
+                "name": "Keyring",
+                "products": [
+                    {
+                        "id": 3165,
+                        "slug": "",
+                        "name": "Cushion Keyring"
+                    },
+                    {
+                        "id": 3219,
+                        "slug": "",
+                        "name": "Sanitizer"
+                    },
+                    {
+                        "id": 3227,
+                        "slug": "",
+                        "name": "Metal Heart Keyring"
+                    },
+                    {
+                        "id": 3228,
+                        "slug": "",
+                        "name": "Wooden Keyring"
+                    },
+                    {
+                        "id": 3229,
+                        "slug": "",
+                        "name": "Lanyard Keyring"
+                    },
+                    {
+                        "id": 3190,
+                        "slug": "",
+                        "name": "Leather Keyring without color"
+                    },
+                    {
+                        "id": 3191,
+                        "slug": "",
+                        "name": "Leather Keyring with color print"
+                    }
+                ]
+            },
+            {
+                "id": 1063,
+                "slug": "",
+                "name": "Calendar",
+                "products": [
+                    {
+                        "id": 3167,
+                        "slug": "",
+                        "name": "Desk Calendar_A5-6 pages"
+                    },
+                    {
+                        "id": 3168,
+                        "slug": "",
+                        "name": "Desk Calendar_A5-(12/14/16) pages"
+                    },
+                    {
+                        "id": 3169,
+                        "slug": "",
+                        "name": "Desk Calendar_A5-24 pages"
+                    },
+                    {
+                        "id": 3170,
+                        "slug": "",
+                        "name": "Desk Calendar_A5-32 pages"
+                    },
+                    {
+                        "id": 3171,
+                        "slug": "",
+                        "name": "Wall Calendar_150 gsm_12x18-2 pages"
+                    },
+                    {
+                        "id": 3172,
+                        "slug": "",
+                        "name": "Wall Calendar_12x18-4 pages"
+                    },
+                    {
+                        "id": 3173,
+                        "slug": "",
+                        "name": "Wall Calender_12x18-6 pages"
+                    },
+                    {
+                        "id": 3174,
+                        "slug": "",
+                        "name": "Wall Calendar_150gsm_12x18-12 page"
+                    },
+                    {
+                        "id": 3175,
+                        "slug": "",
+                        "name": "Wall Calender_150gsm_12x18-14 pages"
+                    },
+                    {
+                        "id": 3176,
+                        "slug": "",
+                        "name": "Wall Calendar_150gsm_15x20-2page"
+                    },
+                    {
+                        "id": 3177,
+                        "slug": "",
+                        "name": "Wall Calendar_150gsm_15x20-4pages"
+                    },
+                    {
+                        "id": 3178,
+                        "slug": "",
+                        "name": "Wall Calendar_150gsm_15x20-6 pages"
+                    },
+                    {
+                        "id": 3179,
+                        "slug": "",
+                        "name": "Wall Calendar_150gms_15x20-12 pages"
+                    },
+                    {
+                        "id": 3180,
+                        "slug": "",
+                        "name": "Wall Calendar_150gsm_15x20-14 pages"
+                    },
+                    {
+                        "id": 3181,
+                        "slug": "",
+                        "name": "Wall Calendar_200gsm_12x18-14 pages"
+                    },
+                    {
+                        "id": 3182,
+                        "slug": "",
+                        "name": "Wall Calendar_200gsm_12x18-12 pages"
+                    },
+                    {
+                        "id": 3183,
+                        "slug": "",
+                        "name": "Wall Calendar_200gsm_12x18-6 pages"
+                    },
+                    {
+                        "id": 3184,
+                        "slug": "",
+                        "name": "Wall Calendar_200gsm_15x20-6 pages"
+                    },
+                    {
+                        "id": 3186,
+                        "slug": "",
+                        "name": "Wall Calendar_200gsm_15x20-12 pages"
+                    },
+                    {
+                        "id": 3187,
+                        "slug": "",
+                        "name": "Wall Calendar_200gsm_15x20-14 pages"
+                    },
+                    {
+                        "id": 3188,
+                        "slug": "",
+                        "name": "Wall Calendar_20x30_250gsm-2 pages"
+                    }
+                ]
+            },
+            {
+                "id": 1065,
+                "slug": "",
+                "name": "Cards",
+                "products": [
+                    {
+                        "id": 3192,
+                        "slug": "",
+                        "name": "A5 Greeting Card-Single side"
+                    },
+                    {
+                        "id": 3193,
+                        "slug": "",
+                        "name": "A5 Greeting Card bothside"
+                    }
+                ]
+            },
+            {
+                "id": 1077,
+                "slug": "",
+                "name": "Frame",
+                "products": [
+                    {
+                        "id": 3224,
+                        "slug": "",
+                        "name": "Mini Canvas Frame"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 1021,
+        "slug": "",
+        "name": "Flex",
+        "categories": [
+            {
+                "id": 1025,
+                "slug": "",
+                "name": "Roland Print ",
+                "products": [
+                    {
+                        "id": 1035,
+                        "slug": "",
+                        "name": "Reflective Sticker"
+                    },
+                    {
+                        "id": 1036,
+                        "slug": "",
+                        "name": "Reflective Flex"
+                    },
+                    {
+                        "id": 2035,
+                        "slug": "",
+                        "name": "One Way Vision "
+                    },
+                    {
+                        "id": 3035,
+                        "slug": "",
+                        "name": "Flex Normal Print"
+                    },
+                    {
+                        "id": 3036,
+                        "slug": "",
+                        "name": "Flex High Quality Print "
+                    },
+                    {
+                        "id": 3037,
+                        "slug": "",
+                        "name": "Backlit"
+                    },
+                    {
+                        "id": 3038,
+                        "slug": "",
+                        "name": "Vinyl Sticker "
+                    },
+                    {
+                        "id": 3039,
+                        "slug": "",
+                        "name": "Vinyl Sticker lamination "
+                    },
+                    {
+                        "id": 3040,
+                        "slug": "",
+                        "name": "Transparent Vinyl Print"
+                    },
+                    {
+                        "id": 3041,
+                        "slug": "",
+                        "name": "Canvas Normal "
+                    },
+                    {
+                        "id": 3042,
+                        "slug": "",
+                        "name": "Canvas Standard"
+                    },
+                    {
+                        "id": 3043,
+                        "slug": "",
+                        "name": "Silk Print"
+                    },
+                    {
+                        "id": 3044,
+                        "slug": "",
+                        "name": "Silk Standard"
+                    },
+                    {
+                        "id": 3045,
+                        "slug": "",
+                        "name": "Translight"
+                    }
+                ]
+            },
+            {
+                "id": 1026,
+                "slug": "",
+                "name": "Normal Print",
+                "products": [
+                    {
+                        "id": 3046,
+                        "slug": "",
+                        "name": "High Quality Print "
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 10,
+        "slug": "",
+        "name": "Apparels",
+        "categories": [
+            {
+                "id": 1029,
+                "slug": "",
+                "name": "Round Neck T-shirt",
+                "products": [
+                    {
+                        "id": 3056,
+                        "slug": "",
+                        "name": "Round Neck T-Shirt 1 Color Print"
+                    },
+                    {
+                        "id": 3066,
+                        "slug": "",
+                        "name": "Round Neck T-shirt-2 Color Print"
+                    },
+                    {
+                        "id": 3067,
+                        "slug": "",
+                        "name": "Round Neck T-shirt-3 Colors Print"
+                    }
+                ]
+            },
+            {
+                "id": 1030,
+                "slug": "",
+                "name": "Polo T-shirt Polyester",
+                "products": [
+                    {
+                        "id": 3068,
+                        "slug": "",
+                        "name": "Polo T-shirt Polyester -2 Colors Print"
+                    },
+                    {
+                        "id": 3069,
+                        "slug": "",
+                        "name": "Polo T-shirt Polyester -3 Colors Print"
+                    },
+                    {
+                        "id": 3057,
+                        "slug": "",
+                        "name": "Polo T-Shirt Polyester - 1 Color Print"
+                    }
+                ]
+            },
+            {
+                "id": 1031,
+                "slug": "",
+                "name": "Polo T-shirt (PC PK)",
+                "products": [
+                    {
+                        "id": 3063,
+                        "slug": "",
+                        "name": "Polo T-shirt (PC PK) - 1 Color Print"
+                    },
+                    {
+                        "id": 3070,
+                        "slug": "",
+                        "name": "Polo T-shirt (PC PK)-2 Colors Print"
+                    },
+                    {
+                        "id": 3071,
+                        "slug": "",
+                        "name": "Polo T-shirt (PC PK)-3 Colors Print"
+                    }
+                ]
+            },
+            {
+                "id": 1032,
+                "slug": "",
+                "name": "Cap",
+                "products": [
+                    {
+                        "id": 3075,
+                        "slug": "",
+                        "name": "Cap- Embroidery"
+                    },
+                    {
+                        "id": 3076,
+                        "slug": "",
+                        "name": "Cap- Screen Print"
+                    }
+                ]
+            },
+            {
+                "id": 1050,
+                "slug": "",
+                "name": "Jacket",
+                "products": [
+                    {
+                        "id": 3142,
+                        "slug": "",
+                        "name": "Safety Reflective Jacket With Single Color Print"
+                    },
+                    {
+                        "id": 3195,
+                        "slug": "",
+                        "name": "Windproof Tracksuit with Inner-single color print"
+                    },
+                    {
+                        "id": 3196,
+                        "slug": "",
+                        "name": "Windproof Tracksuit with Inner-2 color print"
+                    },
+                    {
+                        "id": 3197,
+                        "slug": "",
+                        "name": "Windproof Tracksuit without Inner-Single color print"
+                    },
+                    {
+                        "id": 3198,
+                        "slug": "",
+                        "name": "Windproof Tracksuit without Inner-2 color print"
+                    },
+                    {
+                        "id": 3199,
+                        "slug": "",
+                        "name": "Nylon Jacket with Inner-set(Upper & Lower)"
+                    },
+                    {
+                        "id": 3200,
+                        "slug": "",
+                        "name": "Nylon Jacket with Inner (Upper only)"
+                    },
+                    {
+                        "id": 3201,
+                        "slug": "",
+                        "name": "Waterproof Jacket with Inner-Set(Upper & Lower)"
+                    }
+                ]
+            },
+            {
+                "id": 1052,
+                "slug": "",
+                "name": "Mask",
+                "products": [
+                    {
+                        "id": 3147,
+                        "slug": "",
+                        "name": "Cotton Mask"
+                    }
+                ]
+            },
+            {
+                "id": 1064,
+                "slug": "",
+                "name": "Bags",
+                "products": [
+                    {
+                        "id": 3189,
+                        "slug": "",
+                        "name": "Non Woven Bag with Print"
+                    },
+                    {
+                        "id": 3208,
+                        "slug": "",
+                        "name": "Canvas Tote"
+                    },
+                    {
+                        "id": 3209,
+                        "slug": "",
+                        "name": "Folding Tote"
+                    }
+                ]
+            },
+            {
+                "id": 1075,
+                "slug": "",
+                "name": "Sweat Shirt",
+                "products": [
+                    {
+                        "id": 3221,
+                        "slug": "",
+                        "name": "Normal Sweat Shirt"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 1018,
+        "slug": "",
+        "name": "Digital Print",
+        "categories": [
+            {
+                "id": 1019,
+                "slug": "",
+                "name": "A4",
+                "products": [
+                    {
+                        "id": 3087,
+                        "slug": "",
+                        "name": "A4 BW Single Side"
+                    },
+                    {
+                        "id": 3088,
+                        "slug": "",
+                        "name": "A4 BW  Bothside "
+                    },
+                    {
+                        "id": 1018,
+                        "slug": "",
+                        "name": "A4 Color - Single Side "
+                    },
+                    {
+                        "id": 1019,
+                        "slug": "",
+                        "name": "A4 Color - Bothside "
+                    }
+                ]
+            },
+            {
+                "id": 1020,
+                "slug": "",
+                "name": "12x18 Inch",
+                "products": [
+                    {
+                        "id": 1020,
+                        "slug": "",
+                        "name": "12x18-Color Single Side "
+                    },
+                    {
+                        "id": 1021,
+                        "slug": "",
+                        "name": "12x18 -Color Bothside"
+                    },
+                    {
+                        "id": 3156,
+                        "slug": "",
+                        "name": "12X18- Color Single Side- Lamination"
+                    },
+                    {
+                        "id": 3143,
+                        "slug": "",
+                        "name": "12X18 Paper Sticker"
+                    },
+                    {
+                        "id": 3144,
+                        "slug": "",
+                        "name": "12X18 Paper Sticker- Lamination"
+                    },
+                    {
+                        "id": 3145,
+                        "slug": "",
+                        "name": "12x18 Color Bothside -  Lamination"
+                    }
+                ]
+            },
+            {
+                "id": 1039,
+                "slug": "",
+                "name": "A3 Woodfree",
+                "products": [
+                    {
+                        "id": 3085,
+                        "slug": "",
+                        "name": "A3 B/W (75-100 GSM) - Single Side"
+                    },
+                    {
+                        "id": 3086,
+                        "slug": "",
+                        "name": "A3 B/W (75-100 GSM) - Bothside "
+                    }
+                ]
+            },
+            {
+                "id": 1053,
+                "slug": "",
+                "name": "Sticker Print",
+                "products": [
+                    {
+                        "id": 3148,
+                        "slug": "",
+                        "name": "12x18 Paper Sticker "
+                    },
+                    {
+                        "id": 3149,
+                        "slug": "",
+                        "name": "12x18 Paper Sticker- Lamination"
+                    },
+                    {
+                        "id": 3230,
+                        "slug": "",
+                        "name": "12x18 Synthetic Sticker with Leaser Cutting"
+                    },
+                    {
+                        "id": 3231,
+                        "slug": "",
+                        "name": "12x18 Paper Sticker with Leaser Cutting"
+                    },
+                    {
+                        "id": 3194,
+                        "slug": "",
+                        "name": "A4 PVC Sticker with lamination"
+                    }
+                ]
+            },
+            {
+                "id": 1054,
+                "slug": "",
+                "name": "Metallic Paper",
+                "products": [
+                    {
+                        "id": 3151,
+                        "slug": "",
+                        "name": "12x18 Metallic Color print-Single side"
+                    },
+                    {
+                        "id": 3152,
+                        "slug": "",
+                        "name": "12x18 Metallic Color Print-Bothside"
+                    }
+                ]
+            },
+            {
+                "id": 1055,
+                "slug": "",
+                "name": "Texture Paper",
+                "products": [
+                    {
+                        "id": 3153,
+                        "slug": "",
+                        "name": "12x18 Texture -Single side"
+                    },
+                    {
+                        "id": 3154,
+                        "slug": "",
+                        "name": "12x18 Texture-Bothside"
+                    }
+                ]
+            },
+            {
+                "id": 1056,
+                "slug": "",
+                "name": "Transparent Paper",
+                "products": [
+                    {
+                        "id": 3157,
+                        "slug": "",
+                        "name": "A4 Transparent"
+                    },
+                    {
+                        "id": 3158,
+                        "slug": "",
+                        "name": "Transparent Sticker 12x18"
+                    }
+                ]
+            },
+            {
+                "id": 1059,
+                "slug": "",
+                "name": "Hologram",
+                "products": [
+                    {
+                        "id": 3159,
+                        "slug": "",
+                        "name": "Hologram Sticker 12x18"
+                    }
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,70 @@
+.nav{
+    background-color: rgb(207, 204, 231);
+    // height: 10vh;
+    // color: orange;
+    width: 280px;
+    position: relative;
+    // height: 68vh;
+    // overflow-y: auto;
+    .cate{
+        // background-color: red;
+        margin: .6em 0;
+        padding: 0 .3em;
+        &:hover  > div > span {
+            margin-left: 2px;
+            color: rgb(1, 88, 62);
+            // background-color: rgb(2,n 2, 94);
+        }
+        &:hover .catedropdown{
+            overflow: visible;
+            // width: 280px;
+            display: block;
+        }
+        .catedropdown{
+            position: absolute;
+            
+            // width: 0px;
+            width: 260px;
+            display: none;
+            left: 100%;
+            top: 0;
+            background-color: rgb(230, 238, 230);
+            transition: .5s ease;
+            height: 100%;
+            overflow: hidden;
+            z-index: 1;
+            .subcate{
+                padding: 0 .3em;
+                margin: .4em 0;
+                // position: relative;
+                &:hover div > span {
+                    color: green;
+                    margin-left: 2px;
+                }
+                &:hover .subcatedropdown{
+                    // width: 280px;
+                    // opacity: 1;
+                    // overflow: visible;
+                    display: block;
+                }
+                .subcatedropdown{
+                    background-color: rgb(229, 241, 239);
+                    // display: none;
+                    // padding: 0 .3em;
+                    // margin: .4em 0;
+                    position: absolute;
+                    transition: 1s ease;
+                    // display: none;
+                    // width: 0px;
+                    width: 270px;
+                    display: none;
+                    left: 100%;
+                    // opacity: 0;
+                    top: 0;
+                    height: 100%;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+}

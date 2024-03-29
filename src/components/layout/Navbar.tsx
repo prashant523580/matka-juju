@@ -7,7 +7,7 @@ import Link from 'next/link';
 // import { RootState } from '@/GlobalRedux/store';
 import { usePathname, useRouter } from 'next/navigation';
 
-import { rubikvinyl } from '../Fonts';
+import { fugazone, rubikvinyl } from '../Fonts';
 import Carts from '../Cart';
 import { useSession } from 'next-auth/react';
 import { authGet } from '@/libs/fetch';
@@ -106,7 +106,7 @@ function Navbar() {
       })
     }
   }, [])
-  const className = `relative  group  group-hover:text-white  overflow  text-lg text-black  hover:text-orange duration-200 ease-in-out  lg:hidden block`
+  const className = `relative  group  group-hover:text-white  overflow  text-3xl text-black  hover:text-orange duration-200 ease-in-out  lg:hidden block`
   return (
     <>
       <nav
@@ -150,13 +150,13 @@ function Navbar() {
         
         </div>
         <div className="flex items-center">
-        <div className="links hidden md:flex items-center   space-x-2">
+        <div className="links hidden md:flex items-center   space-x-2 mr-1">
             <Link role='link' aria-label='About' href={"/pages/about"}>About</Link>
             <Link role='link' aria-label='Contact' href={"/pages/contact"}>Contact</Link>
           </div>
           <ul
 
-            className={` uppercase navlist duration-500 md:bg-transparent md:dark:bg-transparent bg-white dark:bg-black  md:flex  justify-center items-center transition-transform  md:flex-row w-10/12 md:w-4/12 p-2 lg:p-0 lg:w-auto lg:translate-x-0   ${IsShowMenu ? "  translate-x-0 overflow-y-auto " : " -translate-x-full "} flex-col lg:relative lg:h-auto h-screen fixed left-0 top-0 shadow-1   dark:shadow-black lg:shadow-none lg:bg-none z-[9999] md:hidden block `}
+            className={ fugazone.className +` uppercase navlist duration-500 md:bg-transparent md:dark:bg-transparent bg-white dark:bg-black  md:flex  justify-center items-center transition-transform  md:flex-row w-10/12 md:w-4/12 p-2 lg:p-0 lg:w-auto lg:translate-x-0   ${IsShowMenu ? "  translate-x-0 overflow-y-auto " : " -translate-x-full "} flex-col lg:relative lg:h-auto h-screen fixed left-0 top-0 shadow-1   dark:shadow-black lg:shadow-none lg:bg-none z-[9999] md:hidden block `}
 
           >
 
@@ -209,10 +209,6 @@ function Navbar() {
           </button>
         </div>
         {/* other category  end*/}
-
-
-
-
       </nav >
       <Carts open={openCart} setOpen={setOpenCart} />
     </>

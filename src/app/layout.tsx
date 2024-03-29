@@ -51,8 +51,8 @@ export const metadata : Metadata = {
     }
   },
   icons: {
-    icon: "/icons/favicon.ico",
-    shortcut: "/icons/favicon.ico",
+    icon: "/icons/android-chrome-512x512.png",
+    shortcut: "/icons/android-chrome-512x512.png",
     apple: "/icons/apple-touch-icon.png",
     other: {
       rel: "apple-touch-icon-precomposed",

@@ -79,25 +79,25 @@ const AddressForm = (props: any) => {
 
                     <div className="relative mb-4">
                         <label htmlFor="full-name" className="leading-7 text-sm text-gray-600">Full Name</label>
-                        <input onChange={inputEvent} value={address.name} type="text" id="full-name" name="name" className="w-full bg-white rounded border-b border-gray-300 focus:border-gray-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+                        <input onChange={inputEvent} value={address.name} type="text" id="full-name" name="name" className="w-full bg-white rounded border-b border-gray-300 focus:border-gray-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required />
                     </div>
                     <div className="relative mb-4">
                         <label htmlFor="email" className="leading-7 text-sm text-gray-600">Email</label>
-                        <input onChange={inputEvent} value={address.email} type="email" id="email" name="email" className="w-full bg-white rounded border-b border-gray-300 focus:border-gray-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+                        <input onChange={inputEvent} value={address.email} type="email" id="email" name="email" className="w-full bg-white rounded border-b border-gray-300 focus:border-gray-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"  required/>
                     </div>
                     <div className="relative mb-4">
                         <label htmlFor="state" className="leading-7 text-sm text-gray-600">State</label>
-                        <input onChange={inputEvent} value={address.state} type="text" id="state" name="state" className="w-full bg-white rounded border-b border-gray-300 focus:border-gray-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+                        <input onChange={inputEvent} value={address.state} type="text" id="state" name="state" className="w-full bg-white rounded border-b border-gray-300 focus:border-gray-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"  required/>
                     </div>
                     <div className="relative mb-4">
                         <label htmlFor="phone" className="leading-7 text-sm text-gray-600">Phone</label>
-                        <input onChange={inputEvent} value={address.phone} type="phone" id="Phone" name="phone" className="w-full bg-white rounded border-b border-gray-300 focus:border-gray-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+                        <input onChange={inputEvent} value={address.phone} type="phone" id="Phone" name="phone" className="w-full bg-white rounded border-b border-gray-300 focus:border-gray-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required />
                     </div>
                     <div className=" col-span-full flex justify-start space-x-2 items-center">
 
                         <div className="relative mb-4 w-half ml-2">
                             <label htmlFor="city" className="leading-7 text-sm text-gray-600">city</label>
-                            <input onChange={inputEvent} value={address.city} type="text" id="city" name="city" className="w-full bg-white rounded border-b border-gray-300 focus:border-gray-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" />
+                            <input onChange={inputEvent} value={address.city} type="text" id="city" name="city" className="w-full bg-white rounded border-b border-gray-300 focus:border-gray-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"  required/>
                         </div>
                         <div className="relative mb-4 w-half mr-2">
                             <label htmlFor="City" className="leading-7 text-sm text-gray-600">street</label>

@@ -24,17 +24,17 @@ const pathname = usePathname();
     getCategory()
   }, [])
 
-  let getCategoryById = (_id: any) => {
-    let currentCategory: any = {};
-    if (category.length > 0) {
-      category.filter((cate: any) => {
-        if (cate._id == _id) {
-          currentCategory = cate
-        }
-      })
-    }
-    return currentCategory
-  }
+  // let getCategoryById = (_id: any) => {
+  //   let currentCategory: any = {};
+  //   if (category.length > 0) {
+  //     category.filter((cate: any) => {
+  //       if (cate._id == _id) {
+  //         currentCategory = cate
+  //       }
+  //     })
+  //   }
+  //   return currentCategory
+  // }
   // let orders = await authGet('order',) 
   const cancellationOrder = async (order: any) => {
     let cancelledOrder = await update("order", order, session.data?.token);
@@ -64,22 +64,22 @@ const pathname = usePathname();
               {/* <p className="leading-relaxed mb-4">Fam locavore kickstarter distillery. Mixtape chillwave tumeric sriracha taximy chia microdosing tilde DIY. XOXO fam inxigo juiceramps cornhole raw denim forage brooklyn. Everyday carry +1 seitan poutine tumeric. Gastropub blue bottle austin listicle pour-over, neutra jean.</p> */}
 
               <div className="overflow-x-auto relative">
-                <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-                  <thead className="text-sm text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                <table className="w-full text-left">
+                  <thead className=" text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
                     <tr>
-                      <th scope="col" className="py-3 px-2">
+                      <th scope="col" className="md:py-3 p-1 text-xs md:text-sm md:px-2">
                         Product name
                       </th>
-                      <th scope="col" className="py-3 px-2">
+                      {/* <th scope="col" className="py-3 text-sm px-2">
                         Category
-                      </th>
-                      <th scope="col" className="py-3 px-2">
+                      </th> */}
+                      <th scope="col" className="md:py-3 p-1 text-xs md:text-sm md:px-2">
                         Quantity
                       </th>
-                      <th scope="col" className="py-3 px-2">
+                      <th scope="col" className="md:py-3 p-1 text-xs md:text-sm md:px-2">
                         Amount
                       </th>
-                      <th>Sub Total Amount</th>
+                      <th  className="md:py-3 text-xs md:text-sm md:px-2 p-1">Sub Total Amount</th>
                       {/* <th scope="col" className="py-3 px-2">
                       Deatils
                     </th> */}
@@ -90,14 +90,14 @@ const pathname = usePathname();
 
                       order.items.map((item: any, ind: any) => (
 
-                        <tr key={ind} className="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                          <td scope="row" className="py-4 px-2 truncate font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                            {item.productId.name.slice(0, 20) + "..."}
+                        <tr key={ind} className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 text-sm">
+                          <td scope="row" className="py-4 px-2 line-clamp-1 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            {item.productId.name}
                             {/* {JSON.stringify(item.productId.name)} */}
                           </td>
-                          <td className="py-4 px-4">
+                          {/* <td className="py-4 px-4">
                             {getCategoryById(item.productId.category).name}
-                          </td>
+                          </td> */}
                           <td className="py-4 px-4">
                             {item.purchasedQuantity}
                           </td>
@@ -112,8 +112,8 @@ const pathname = usePathname();
 
 
                     <tr className="bg-white border-b dark:bg-gray-800 dark:border-gray-700 text-black ">
-                      <td className='py-4 px-4 text-black text-base font-bold' colSpan={3}>Total Paid</td>
-                      <td className='py-4 px-4 text-black text-base font-bold' colSpan={2}>Rs.{order.totalAmt}</td>
+                      <td className='py-4 px-4 text-black text-sm md:text-base font-bold' colSpan={3}>Total Paid</td>
+                      <td className='py-4 px-4 text-black text-sm md:text-base font-bold' colSpan={2}>Rs.{order.totalAmt}</td>
                     </tr>
                   </tbody>
                 </table>
@@ -123,7 +123,7 @@ const pathname = usePathname();
               {
                 order.order != "cancelled" &&
                 <div className="flex mt-5 items-center">
-                  <p className="title-font font-medium text-xl  text-gray-900">Total Paid :<span>Rs.{order.totalAmt}</span></p>
+                  {/* <p className="title-font font-medium text-xl  text-gray-900">Total Paid :<span>Rs.{order.totalAmt}</span></p> */}
                   <Link className="flex ml-auto text-white bg-gray-500 border-0 focus:outline-none px-3 py-2 hover:bg-gray-600 rounded" href={{ pathname: pathname +"/"+ order._id  }}> Track Order</Link>
                   {/* <button className="flex ml-auto text-white bg-gray-500 border-0 focus:outline-none hover:bg-gray-600 rounded">Track Order</button> */}
                   {

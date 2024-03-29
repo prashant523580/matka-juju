@@ -56,7 +56,7 @@ function OrderComponent({ params }: {
     //     return router.push("/")
     // }
     return (
-        order &&
+        order?.items ?
         <div>
 
             <section className="text-gray-600 body-font py-8">
@@ -110,7 +110,7 @@ function OrderComponent({ params }: {
                                     <div key={product.productId._id} className='text-center '>
                                         <Image width={250} height={250} src={product.productId.images[0].src} alt={product.productId.name} className='mx-auto' />
                                         <div className="bg-gray-100">
-                                            <div className="flex">
+                                            <div className="">
 
                                             <h2 className='text-base text-gray-700 capitalize'>{product.productId.name}</h2>
                                             <p className="">Quantity {product.purchasedQuantity}</p>
@@ -120,7 +120,7 @@ function OrderComponent({ params }: {
                                                 <p className={`${product.productId.discount > 0 ? "text-gray-500 line-through" : ""}`}> Rs.{product.productId.price} </p>
                                                 {product.productId.discount > 0 && <p className='text-lg font-medium'>-{product.productId.discount}% off</p>}
                                             </div>
-                                            <div className="text-lg">{Number(calculateDiscountedPrice(product.productId.price, product.productId.discount).discountedPrice)}</div>
+                                            { product.productId.discount > 0 && <div className="text-lg">{Number(calculateDiscountedPrice(product.productId.price, product.productId.discount).discountedPrice)}</div>}
                                             <p className='text-lg'>Rs.{Number(product.purchasedQuantity) * Number(calculateDiscountedPrice(product.productId.price, product.productId.discount).discountedPrice)}</p>
                                         </div>
                                     </div>
@@ -134,6 +134,8 @@ function OrderComponent({ params }: {
                 </div>
             </section>
         </div>
+        :
+        <p>Loading...</p>
     )
 }
 

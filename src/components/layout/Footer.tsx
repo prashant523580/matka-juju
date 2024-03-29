@@ -9,9 +9,14 @@ function Footer() {
     <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
         <div className="sm:flex sm:items-center sm:justify-between">
             <Link href="/" className="flex items-center mb-4 sm:mb-0">
-                <Image src="/logo.png" width={100} height={100} className=" mr-3" alt="Flowbite Logo" />
+                <Image src="/logo.png" width={130} height={130} className=" mx-auto sm:mr-3" alt="Flowbite Logo" />
                 {/* <span className="self-center text-2xl uppercase font-semibold whitespace-nowrap dark:text-white"></span> */}
             </Link>
+            <div className="flex flex-col items-center justify-center p-1">
+                <p className=' text-xs text-green-600'>Scan QR To order</p>
+            <Image src={"/images/QR-whatsapp.png"} className='mx-auto rounded-md' width={80} height={80} alt='whatsapp QR' />
+                <p className='md:text-base sm:text-base text-sm text-green-600'>WhatsApp QR</p>
+            </div>
             <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
                 <li>
                     <Link href="/pages/about" className="mr-4 hover:underline md:mr-6 ">About</Link>

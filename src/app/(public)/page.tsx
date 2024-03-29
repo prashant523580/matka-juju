@@ -69,7 +69,7 @@ export default async function Home() {
             {showcase.map((cate: any, ind: number) => (
               <div className='cursor-pointer hover:underline  bg-white relative overflow-hidden   ' key={ind}>
                 <Image src={"/images/matkajuju.png"} alt={cate.title}
-                  width={650} height={400}
+                  width={700} height={400}
                 // fill
                 // sizes='100vw'
                 className='object-cover'

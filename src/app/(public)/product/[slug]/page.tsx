@@ -9,7 +9,7 @@ interface PageProps {
       [key: string]: string | string[] | undefined,
   }
 }
-export const stripHtmlTags = (html: string) => {
+const stripHtmlTags = (html: string) => {
   if (html) {
 
       return html.replace(/<[^>]*>/g, '');

@@ -146,6 +146,7 @@ function ProductPage() {
   const handleEditCategoryModal = (product: any) => {
     // console.log(cate)
     // selectedCategory(cate);
+    console.log(product)
     setProduct({
       ...product,
       category: product.category._id

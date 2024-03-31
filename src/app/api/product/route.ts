@@ -47,7 +47,7 @@ export async function GET(req: NextRequest, { searchParams }: any) {
         'discount': 1,
         "createdAt": 1,
         "updatedAt": 1,
-        "tags": 1,
+        "keywords": 1,
         // "colors": 1
       }
     }

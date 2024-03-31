@@ -2,13 +2,21 @@ import { get } from '@/libs/fetch'
 import React from 'react'
 import ProductComponent from './ProductComponent'
 import { Metadata } from 'next';
+import Script from 'next/script';
 interface PageProps {
   params: { slug: string },
   searchParams: {
       [key: string]: string | string[] | undefined,
   }
 }
+export const stripHtmlTags = (html: string) => {
+  if (html) {
 
+      return html.replace(/<[^>]*>/g, '');
+  } else {
+      return ''
+  }
+};
 export async function generateMetadata({ params: { slug }  }: PageProps) : Promise<Metadata> {
   try {
   
@@ -80,12 +88,75 @@ export async function generateMetadata({ params: { slug }  }: PageProps) : Promi
 }
 async function ProductPage({params :{slug}} :PageProps) {
   let product = await get("product/"+slug);
-
+  const generateJSONLDSchema = (product : any) => {
+    let schema = 
+    {
+      "@context": "http://schema.org",
+      "@type": "Product",
+      "name": product?.name,
+      "description": product?.description ?  stripHtmlTags(product?.description) : product?.name,
+      "brand": {
+        "@type": "Brand",
+        "name": [product?.category?.name],
+        "logo": product?.category?.image?.src
+      },
+      "image": product?.images[0].src,
+      "url": process.env.NEXTAUTH_URL+"/product/"+product.slug,
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": process.env.NEXTAUTH_URL
+          },
+          {
+              "@type": "ListItem",
+              "position": 4,
+              "name": product?.name,
+              "item": process.env.NEXTAUTH_URL +  "/product/" + product?.slug
+              // href: "/category/" + post.category.slug
+          },
+      ]
+    },
+      // "sku": "MP123456",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "NPR",
+        "price": product?.price,
+        "availability": "http://schema.org/InStock",
+        "seller": {
+          "@type": "Organization",
+          "name": "Raj Poudel",
+          "url": "http://matkajuju.com"
+        }
+      },
+      // "aggregateRating": {
+      //   "@type": "AggregateRating",
+      //   "ratingValue": "4.5",
+      //   "reviewCount": "100"
+      // },
+    "keywords": product?.tags ? product?.tags : [product.title,product?.category?.name]
+    }
+    return schema
+}
+const jsonLd = generateJSONLDSchema(product)
   return (
+    <>
     <div>
       <ProductComponent product={product}/>
    
     </div>
+  <Script
+    async
+    id='jsonld-product'
+    type="application/ld+json"
+    dangerouslySetInnerHTML={{
+      __html: JSON.stringify(jsonLd)
+    }}
+    />
+    </>
   )
 }
 

@@ -69,15 +69,18 @@ function AboutPage() {
             </div>
           </div>
         </div> */}
-         <div className="flip-card cursor-pointer  h-[120px] w-[240px]  sm:h-[180px] sm:w-[400px]  md:h-[250px] md:w-[500px] [perspective:1000px] mx-auto">
+        <div className="mt-8">
+
+         <div className="flip-card cursor-pointer  h-[120px] w-[18rem]  sm:h-[180px] sm:w-[400px]  md:h-[250px] md:w-[30rem] [perspective:1000px] mx-auto ">
           <div className="flip-card-inner">
             <div className="flip-card-front ">
-              <Image width={500} height={200} src={"/images/bussiness-card/front.svg"} className='object-cover shadow-xl shadow-black/40'  alt='banner front' />
+              <Image width={500} height={200} src={"/images/bussiness-card/front.svg"} className='object-cover rounded-lg '  alt='banner front' />
             </div>
             <div className="flip-card-back">
-              <Image width={500} height={200} className='object-cover shadow-xl shadow-black/40 ' src={"/images/bussiness-card/back.svg"}  alt='banner back' />
+              <Image width={500} height={200} className='object-cover  rounded-lg ' src={"/images/bussiness-card/back.svg"}  alt='banner back' />
             </div>
           </div>
+        </div>
         </div>
     </div>
   )

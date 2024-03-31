@@ -6,6 +6,8 @@ import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css';
 import NextTopLoader from 'nextjs-toploader'
 import { site } from '@/constent'
+import Script from 'next/script'
+import { GoogleAnalytics, GoogleTagManager } from '@next/third-parties/google'
 
 // import SessionProviders from './provider'
 
@@ -19,7 +21,7 @@ const inter = Unbounded({ subsets: ['latin'], weight: "400" },)
 //   Our team is made up of avid gel blaster enthusiasts who have a deep understanding of the industry and what customers are looking for. We believe that everyone should have access to high-quality gel blasters, and we work hard to make that a reality for our customers.`,
 // }
 
-export const metadata : Metadata = {
+export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_URL),
   alternates: {
     canonical: '/',
@@ -29,22 +31,28 @@ export const metadata : Metadata = {
     // },
   },
   openGraph: {
-    images: site.icon,
+    images: ["/icons/android-chrome-512x512.png", site.icon, "/logo.png"],
+    siteName: site.name,
+    description: site.description,
+    type: "website",
+    countryName: "Nepal",
+    title: site.name,
+    url: "/"
   },
   title: {
     default: site.name,
     template: '%s | ' + site.name
   },
-  description: site.description,
+  description: site.description.slice(0,170),
   keywords: site.keywords,
   robots: {
-    index: false,
+    index: true,
     follow: true,
-    nocache: true,
+    nocache: false,
     googleBot: {
       index: true,
       follow: true,
-      noimageindex: true,
+      noimageindex: false,
       "max-video-preview": -1,
       "max-image-preview": "large",
       "max-snippet": -1,
@@ -87,10 +95,77 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    "@type": "Organization",
+    name: site.name,
+    image: process.env.NEXT_PUBLIC_URL + "/icons/android-chrome-720x540.png",
+    url: process.env.NEXT_PUBLIC_URL,
+    description: site.description,
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": site.contact,
+      "contactType": "Customer service",
+    },
+    keywords: site.keywords,
+    "sameAs": [
+      "https://twitter.com/Prashant62758",
+      "https://www.facebook.com/chordograph/",
+      "https://www.instagram.com/prshnt._.mgr/"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Nepalgunj, Bhirkutinagar, Banke",
+      "addressRegion": "NP",
+      "postalCode": "21900",
+      "addressCountry": "NP"
+    },
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://matkajuju.com/",
+        "name": "Prashant",
+        "image": {
+          "@type": "ImageObject",
+          "inLanguage": "en-US",
+          "@id": "https://matkajuju.com/#",
+          "url": "https://secure.gravatar.com/avatar/7bf766960e82968a4f0a031245744036aedd60adf2c9adca0a869d4d7636231c?size=256",
+          "contentUrl": "https://secure.gravatar.com/avatar/7bf766960e82968a4f0a031245744036aedd60adf2c9adca0a869d4d7636231c?size=256",
+          "caption": "Prashant",
+          "width": "400",
+          "height": "400"
+        },
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "SiteNavigationElement",
+        "name": "Home",
+        "url": process.env.NEXT_PUBLIC_URL
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "SiteNavigationElement",
+        "name": "Products",
+        "url": "https://matkajuju.com/products"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "SiteNavigationElement",
+        "name": "About",
+        "url": "https://matkajuju.com/pages/about"
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "SiteNavigationElement",
+        "name": "Contact",
+        "url": "https://matkajuju.com/pages/contact"
+      },
+    ]
+  }
   return (
     <html lang="en">
-      <AuthSessionProvider>
-        <body className={inter.className + " "}>
+      <body className={inter.className + " "}>
         <NextTopLoader
           color="#333"
           initialPosition={0.08}
@@ -102,10 +177,24 @@ export default function RootLayout({
           speed={200}
           shadow="0 0 10px #2299DD,0 0 5px #2299DD"
         />
-          <ToastContainer />
+        <ToastContainer />
+        <AuthSessionProvider>
           {children}
-        </body>
-      </AuthSessionProvider>
+        </AuthSessionProvider>
+      
+
+      </body>
+      <GoogleAnalytics gaId='G-C3XKPEBXD1'/>
+      <GoogleTagManager gtmId='GTM-MMDV9L43'/>
+        <Script
+          id='jsonld-home'
+          type='application/ld+json'
+          async
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(jsonLd)
+          }}
+        />
+      
     </html>
   )
 }

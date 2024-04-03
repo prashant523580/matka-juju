@@ -106,7 +106,7 @@ function Navbar() {
       })
     }
   }, [])
-  const className = `relative  group  group-hover:text-white  overflow  text-3xl text-black  hover:text-orange duration-200 ease-in-out  lg:hidden block`
+  const className = `relative  group  group-hover:text-white  overflow  text-2xl text-black  hover:text-orange duration-200 ease-in-out  lg:hidden block`
   return (
     <>
       <nav
@@ -156,7 +156,7 @@ function Navbar() {
           </div>
           <ul
 
-            className={ fugazone.className +` uppercase navlist duration-500 md:bg-transparent md:dark:bg-transparent bg-white dark:bg-black  md:flex  justify-center items-center transition-transform  md:flex-row w-10/12 md:w-4/12 p-2 lg:p-0 lg:w-auto lg:translate-x-0   ${IsShowMenu ? "  translate-x-0 overflow-y-auto " : " -translate-x-full "} flex-col lg:relative lg:h-auto h-screen fixed left-0 top-0 shadow-1   dark:shadow-black lg:shadow-none lg:bg-none z-[9999] md:hidden block `}
+            className={ ` uppercase navlist duration-500 md:bg-transparent md:dark:bg-transparent bg-white dark:bg-black  md:flex  justify-center items-center transition-transform  md:flex-row w-10/12 md:w-4/12 p-4 lg:p-0 lg:w-auto lg:translate-x-0   ${IsShowMenu ? "  translate-x-0 overflow-y-auto " : " -translate-x-full "} flex-col lg:relative lg:h-auto h-screen fixed left-0 top-0 shadow-1   dark:shadow-black lg:shadow-none lg:bg-none z-[9999] md:hidden block  `}
 
           >
 

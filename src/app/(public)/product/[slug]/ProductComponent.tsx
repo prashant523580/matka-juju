@@ -144,7 +144,7 @@ export default function ProductComponent({ product }: { product: any }) {
 
 
 
-          <div className="flex space-x-4 px-4 md:px-8 mt-8">
+          <div className="flex space-x-4 px-4 md:px-8 mt-4">
 
 
             <div className="flex flex-col md:flex-row   w-full  ">
@@ -154,7 +154,7 @@ export default function ProductComponent({ product }: { product: any }) {
 
               </div>
               <div className="flex flex-col w-full md:w-2/6 mx-auto">
-                <div className="lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8 flex justify-between md:flex-col flex-row">
+                <div className="lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8 flex justify-between flex-col   ">
                   <h1 className="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl">{product.name}  {`( ${size} )`}</h1>
                   <p className="text-lg md:text-3xl tracking-tight text-gray-900">RS.{product.price}</p>
                 </div>

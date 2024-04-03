@@ -95,7 +95,14 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-
+let faqArray = site.faqs.map((faq) =>(  {
+  "@type": "Question",
+  "name": faq.question,
+  "acceptedAnswer": {
+    "@type": "Answer",
+    "text": faq.answer
+  }
+}))
   const jsonLd = {
     '@context': 'https://schema.org',
     "@type": "Organization",
@@ -161,11 +168,15 @@ export default function RootLayout({
         "name": "Contact",
         "url": "https://matkajuju.com/pages/contact"
       },
-    ]
+      {
+        "@type": "FAQPage",
+        "mainEntity": faqArray
+      }
+    ],
   }
   return (
     <html lang="en">
-      <body className={inter.className + " "}>
+      <body className={inter.className + " bg-gray-100"}>
         <NextTopLoader
           color="#333"
           initialPosition={0.08}

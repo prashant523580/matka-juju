@@ -176,7 +176,7 @@ let faqArray = site.faqs.map((faq) =>(  {
   }
   return (
     <html lang="en">
-      <body className={inter.className + " bg-gray-100"}>
+      <body className={inter.className + " tracking-wider bg-gray-100"}>
         <NextTopLoader
           color="#333"
           initialPosition={0.08}

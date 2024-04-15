@@ -42,7 +42,7 @@ function ProductCard({ product }: { product: any }) {
 
       <div className="flex w-full items-center flex-col  justify-between border-t px-2">
         <div className="flex flex-col">
-          <Link href={`/product/${product.slug}`} className="text-lg md:text-xl  text-gray-800 transition duration-100 hover:text-orange-500 font-bold  capitalize line-clamp-1">{product.name}</Link>
+          <Link href={`/product/${product.slug}`} className="text-lg md:text-xl   transition duration-200 text-black capitalize line-clamp-1">{product.name}</Link>
           
         </div>
 

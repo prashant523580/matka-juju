@@ -31,7 +31,7 @@ const orderSchema = new mongoose.Schema({
     },
     paymentStatus: {
         type: String,
-        enum: ["cancelled", "pending", "refund", "completed"]
+        enum: ["cancelled", "pending", "refund", "paid"]
     },
     paymentType: {
         type: String,

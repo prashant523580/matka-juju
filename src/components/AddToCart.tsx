@@ -54,7 +54,7 @@ function AddToCart({cart, onUpdateCart} : {cart:any ,onUpdateCart?:any}) {
 
   }
   return (
-    <button className="btn mt-auto p-2 bg-black text-white" onClick={handleAddToCart} disabled={loading}>{loading === true ? "Adding to cart.." :"Add to Carts"}</button>
+    <button className="btn mt-auto p-2 bg-gray-700 bg-opacity-90 hover:bg-opacity-100 text-white" onClick={handleAddToCart} disabled={loading}>{loading === true ? "Adding to cart.." :"Add to Carts"}</button>
     )
   }
   

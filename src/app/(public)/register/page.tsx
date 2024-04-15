@@ -85,8 +85,8 @@ const Register = () => {
               <a href="#" className="text-primary">Sign up</a>
             </p>
           </form> */}
-          <div className="mt-16 grid space-y-4">
-            <button onClick={googleSignIn} className="group relative flex  items-center px-6 before:absolute before:inset-0 before:rounded-full before:bg-white dark:before:bg-gray-700 dark:before:border-gray-600 before:border before:border-gray-200 before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 disabled:before:bg-gray-300 disabled:before:scale-100">
+          <div className="mt-16 grid ">
+            <button onClick={googleSignIn} className="group relative flex  items-center px-6 py-2 before:absolute before:inset-0 before:rounded-full before:bg-white dark:before:bg-gray-700 dark:before:border-gray-600 before:border before:border-gray-200 before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 disabled:before:bg-gray-300 disabled:before:scale-100">
               <span className="w-full relative flex justify-center items-center gap-3 text-sm md:text-base font-medium text-gray-600 dark:text-gray-200">
                <FaGoogle/>
                 <span>Continue with Google</span>

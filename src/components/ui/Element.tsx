@@ -1,14 +1,18 @@
 import React from "react"
+import { unbounded } from "../Fonts"
 
 export const Heading = ({children,className} : {children: React.ReactNode , className : string}) => {
     return(
-        <h2 className={ `${className ? className : "" } md:text-4xl sm:text-3xl text-2xl text-yellow-600` } >{children}</h2>
+        <h2 className={ `${className ? className : "" } md:text-3xl sm:text-2xl text-xl text-main-color` } >{children}</h2>
     )
 }
 
 export const SectionHeading = ({children,className} : {children: React.ReactNode , className : string}) => {
     return(
-        <h2 className={ `${className ? className : "" } md:text-5xl sm:text-4xl text-3xl font-bold text-yellow-600` } >{children}</h2>
+        <h2 
+        // className={unbounded.className}
+        className={ unbounded.className + ` ${className ? className : "" } tracking-wider md:text-4xl sm:text-3xl text-2xl font-bold  text-gray-800` }
+         >{children}</h2>
     )
 }
 export const Title = ({children,className} : {children: React.ReactNode , className : string}) => {

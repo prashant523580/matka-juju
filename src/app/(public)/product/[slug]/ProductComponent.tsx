@@ -155,8 +155,8 @@ export default function ProductComponent({ product }: { product: any }) {
               </div>
               <div className="flex flex-col w-full md:w-2/6 mx-auto">
                 <div className="lg:col-span-2 lg:border-r lg:border-gray-200 lg:pr-8 flex justify-between flex-col   ">
-                  <h1 className="text-xl font-bold tracking-tight text-gray-900 sm:text-2xl">{product.name}  {`( ${size} )`}</h1>
-                  <p className="text-lg md:text-3xl tracking-tight text-gray-900">RS.{product.price}</p>
+                  <h1 className="text-xl font-bold tracking-tight text-gray-800 sm:text-2xl">{product.name}  {`( ${size} )`}</h1>
+                  <p className="text-lg md:text-2xl tracking-tight text-gray-800">RS.{product.price}</p>
                 </div>
 
                 {/* Options */}
@@ -192,10 +192,10 @@ export default function ProductComponent({ product }: { product: any }) {
                     
                     <div className="quantity  select-none">
                       <p>Quantity</p>
-                      <button className='px-3  bg-gray-300  rounded py-1' onClick={() => setQuantity(quantity > 0 ? quantity - 1 : 0)}>-</button>
-                      <input type="number" className='w-2/6 text-center' value={quantity} onChange={(e: any) => setQuantity(Number(e.target.value))} readOnly />
+                      <button className='  bg-gray-300  rounded-full w-8 h-8 p-1' onClick={() => setQuantity(quantity > 0 ? quantity - 1 : 0)}>-</button>
+                      <input type="number" className='w-1/6 text-center' value={quantity} onChange={(e: any) => setQuantity(Number(e.target.value))} readOnly />
                       {/* <span className='p-4'>{quantity}</span> */}
-                      <button className='px-3  bg-gray-300  rounded py-1' onClick={() => setQuantity(quantity + 1)}>+</button>
+                      <button className='  bg-gray-300  rounded-full w-8 h-8 p-1' onClick={() => setQuantity(quantity + 1)}>+</button>
                     </div>
                     <div className="my-2 grid">
 

@@ -56,7 +56,7 @@ export default function CustomizedAccordions() {
         };
 
     return (
-        <div className=''>
+        <div className={""}>
             {
                 site.faqs.map((faq) => (
 

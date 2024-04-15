@@ -36,7 +36,7 @@ const addressSchema = new mongoose.Schema({
   }
 });
 
-// B
+
 const userAddressSchema = new mongoose.Schema({
   user: {
     type: mongoose.Schema.Types.ObjectId,

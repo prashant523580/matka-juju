@@ -28,7 +28,7 @@ export default async function Home() {
 
                 <CarouselItem key={ind}>
                   <div
-                    className="h-[230px] sm:h-[350px] md:h-[520px] w-full relative"
+                    className="h-[200px] sm:h-[350px] md:h-[520px] w-full relative"
                   >
                     {/* <Image 
             width={1800}
@@ -56,7 +56,7 @@ export default async function Home() {
       </div>
       <main className=" px-2 space-y-8  mx-auto max-w-screen-xl pt-1">
         <Section className=''>
-          <SectionHeading className='text-3xl md:text-4xl text-center mb-4 md:mb-8 text-yellow-600 uppercase'>Juju Dhau: A Traditional Delight</SectionHeading>
+          <SectionHeading className='text-3xl md:text-4xl text-center mb-4 md:mb-8  uppercase'>Juju Dhau: A Traditional Delight</SectionHeading>
           <Paragraph className='text-center'>
 
             Juju Dhau, also known as &apos;&apos;King Curd,&apos;&apos; is a traditional Nepalese dessert that originated in the ancient city of Bhaktapur. This creamy and indulgent delicacy holds deep cultural significance and is often enjoyed during festivals, celebrations, and special occasions in Nepal.</Paragraph>

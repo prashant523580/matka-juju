@@ -27,7 +27,7 @@ function OrderCompletePage() {
           <div className="text-gray-700">
             {
               
-              orders[0]?.paymentType == "cod" ?
+              orders[0]?.paymentType.toUppercase() !== "ESEWA" ?
               <p>
 
               `Thank you for your order! We kindly request your confirmation for the payment of Rs.{orders[0]?.totalAmt} (Order Id: #{orders[0]?.orderId}). Attached is the screenshot of your payment for your reference.`

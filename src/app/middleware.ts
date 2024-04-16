@@ -3,10 +3,10 @@ import { NextResponse } from "next/server";
 
 
 export default withAuth(function middleware(req) {
-    console.log(req.nextUrl.pathname)
+    console.log(req.nextUrl.pathname , "middleware")
     console.log(req.nextauth.token?.role)
-    if(req.nextUrl.pathname.startsWith("/admin") && (req.nextauth.token?.role !== ("admin" || "superadmin"))){
-            return NextResponse.rewrite(new URL("/denied",req.url)) 
+    if(req.nextUrl.pathname.startsWith("/admin") && (req.nextauth.token?.role == "user")){
+            return NextResponse.rewrite(new URL("/",req.url)) 
     }
 },
 {
@@ -16,5 +16,6 @@ export default withAuth(function middleware(req) {
 })
 
 export const config = {
-    matcher: ["/admin"]
+    matcher: ["/admin","/admin/:path*", 
+]
 }

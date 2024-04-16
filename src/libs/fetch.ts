@@ -47,15 +47,22 @@ export const post = async (url:any,payload:any,token:any) => {
 
 }
 export const update = async (url:any,payload:any,token:any) => {
-    let res = await fetch(`${process.env.NEXT_PUBLIC_API}/${url}`,{
-        method:"PUT",
-        body:JSON.stringify(payload),
-        headers:{
-            "Content-Type":"application/json",
-            "Authorization": `Bearer ${token}`
-        }
-    })
-    return res.json()
+    try{
+
+        let res = await fetch(`${process.env.NEXT_PUBLIC_API}/${url}`,{
+            method:"PUT",
+            body:JSON.stringify(payload),
+            headers:{
+                "Content-Type":"application/json",
+                "Authorization": `Bearer ${token}`
+            }
+        })
+        return res.json()
+    }catch(error){
+        console.log(error)
+        return null
+    }
+
 }
 
 export const remove = async (url:string,id:any,token:string) => {

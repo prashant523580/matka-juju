@@ -84,27 +84,28 @@ export async function POST(req:NextRequest, res: NextResponse) {
 
 export async function PUT(req : NextRequest,res:NextResponse){
     try{
-        const data = await req.json()
-        let updatedOrder = await order.updateOne({
-            _id:data.order_Id,
-            "paymentStatus": data.status,
-        });
+        const data = await req.json();
+        // console.log(data)
+        let corder = await order.findByIdAndUpdate(data.order_Id,{
+            paymentStatus: data.status
+        })
+        console.log(corder)
+        // let updatedOrder = await order.updateOne({
+        //     _id:data.order_Id,
+        //     "paymentStatus": data.status,
+        // }
         // ,{
         //     $set:{
-        //         'orderStatus.$': [
-        //             {
-        //                 type:data.type, date: new Date(), isCompleted: true
-        //             },
-        //         ],
+        //         'paymentStatus': data.status,
         //     },
-        // }
+        // });
+       
         return NextResponse.json({
             status : "success",
-            order : updatedOrder
+            order : corder,
+            success : true
         })
-        return NextResponse.json({
-            success: true
-        })
+       
     }catch(error){
         console.log(error)
          return new NextResponse(null)

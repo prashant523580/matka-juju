@@ -30,7 +30,7 @@ export const authOptions: NextAuthOptions = {
             }
         }),
         Credential({
-            name: "credential",
+            name: "credentials",
             credentials: { email: "", password: "" } as any,
             //@ts-ignore
             async authorize(credentials, req) {
@@ -134,40 +134,22 @@ export const authOptions: NextAuthOptions = {
 
 
         async jwt({ token, user, account, profile, isNewUser }) {
-            // if(user) token.role = user.role
-            // let id = user?.id;
-            // console.log(user)
-            // token.accessToken = accessToken
-            // token.role = user.role
-            // console.log({token})
-
-            // Custom JWT token logic
-            //   console.log(user.id)
-            // console.log({user,token})
+          
             return { ...token, ...user };
             // return token
         },
-        // async session({ session, token, user }) {
-
-        //     if (session?.user) session.user.role = token.role
-        //     let currUser = await User.findOne({ email: token.email });
-        //     session?.user = {...currUser}
-        //     let accessToken = signJwtToken(JSON.parse(JSON.stringify(currUser._id)))
-        //     session.token = accessToken;
-
-        //     return session
-        // },
+     
         async session({ session, token, user }) {
             try {
                 // Check if session.user is defined before accessing its properties
-                await connectToMongodb()
                 if (session && session.user) {
                     session.user.role = token.role;
                 }
+                await connectToMongodb();
 
                 // Find the current user using the provided token
                 let currUser = await User.findOne({ email: token.email });
-
+                    // console.log(currUser)
                 // If the current user is found, update the session user
                 if (currUser) {
                     session.user = { ...(currUser.toJSON() || {}), ...session.user };
@@ -182,15 +164,15 @@ export const authOptions: NextAuthOptions = {
             }
         },
 
-        async redirect({ url, baseUrl }: { url: any, baseUrl: any }) {
-            // console.log({url,baseUrl})
-            // return url.startsWith(baseUrl) ? url : baseUrl;
-            // Allows relative callback URLs
-            if (url.startsWith("/")) return `${baseUrl}${url}`
-            // Allows callback URLs on the same origin
-            else if (new URL(url).origin === baseUrl) return url
-            return baseUrl
-        },
+        // async redirect({ url, baseUrl }: { url: any, baseUrl: any }) {
+        //     // console.log({url,baseUrl})
+        //     // return url.startsWith(baseUrl) ? url : baseUrl;
+        //     // Allows relative callback URLs
+        //     if (url.startsWith("/")) return `${baseUrl}${url}`
+        //     // Allows callback URLs on the same origin
+        //     else if (new URL(url).origin === baseUrl) return url
+        //     return baseUrl
+        // },
 
     },
 

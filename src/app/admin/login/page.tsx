@@ -14,7 +14,7 @@ function LoginPage() {
     e.preventDefault();
 
     let result = await signIn("credentials", { ...user, redirect: false })
-    console.log(result)
+    // console.log(result)
     if (result?.error !== null) {
       toast.error(result?.error, {
         position: toast.POSITION.TOP_RIGHT
@@ -25,7 +25,7 @@ function LoginPage() {
 
   }
   React.useEffect(() => {
-    if (!(data?.user?.role === "user") && status === "authenticated") {
+    if (data?.user?.role != "user" && status === "authenticated") {
       router.replace("/admin/dashboard")
     }
   }, [data, status])

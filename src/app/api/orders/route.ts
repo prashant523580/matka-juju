@@ -9,8 +9,6 @@ export async function GET(req: NextRequest, res: NextResponse) {
 
         // console.log(token)
         await connectToMongodb();
-
-
         let orders = await order.find().populate("items.productId","name images _id price category discount").populate("user");
        
         
@@ -21,7 +19,7 @@ export async function GET(req: NextRequest, res: NextResponse) {
             const address = await UserAddress.findOne({ user: orderItem.user._id });
 
             // Find the matching addressId in the address array
-            const matchedAddress = address?.address.find((adr: any) => adr._id.toString() === orderItem.addressId.toString());
+            const matchedAddress = address?.address.find((adr: any) => adr._id.toString() === orderItem?.addressId?.toString());
 
             if (matchedAddress) {
                 // Update the address field in the order
@@ -31,25 +29,7 @@ export async function GET(req: NextRequest, res: NextResponse) {
                 orderArray.push(orderItem);
             }
         }
-            // ordersCopy.map( async (order : any) => {
-
-            //     let address = await UserAddress.findOne({user :  order.user._id});
-            //     address.address.find((adr:any) => {
-            //         //     console.log(adr._id)
-            //         if(adr._id.toString() == order.addressId.toString()){
-            //             order.addressId = adr
-            //             // console.log(order)
-            //             orderArray.push({
-            //                 ...order,
-            //                 address : adr
-            //             })
-                        
-            //         }
-            //     });
-            // })
-            // console.log({orderArray})
-        
-        // console.log(orders)
+     
        return new  NextResponse(JSON.stringify(orders))
     } catch (error: any) {
        return NextResponse.json({ error })

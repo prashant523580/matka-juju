@@ -84,7 +84,7 @@ export default function Carts({ open, setOpen }: { open: boolean, setOpen: any }
                       <div className="mt-8">
                         <div className="flow-root">
                           <ul role="list" className="-my-6 divide-y divide-gray-200">
-                            {cart.length > 0 ? cart?.map((product) => (
+                            {cart?.length > 0 ? cart?.map((product) => (
                               <li key={product.product._id} className="flex py-6">
                                 <div className="h-24 w-24 flex-shrink-0 overflow-hidden rounded-md border border-gray-200">
                                   <img
@@ -158,7 +158,7 @@ export default function Carts({ open, setOpen }: { open: boolean, setOpen: any }
                       </div>
                       {/* <p className="mt-0.5 text-sm text-gray-500">Shipping and taxes calculated at checkout.</p> */}
                         {
-                          cart.length>0 &&
+                          cart?.length>0 &&
                       <div className="mt-6">
                         <Link
                           href="/checkout"

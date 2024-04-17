@@ -1,10 +1,10 @@
 import { withAuth } from "next-auth/middleware";
-import { NextResponse } from "next/server";
+import { NextRequest, NextResponse } from "next/server";
 
 const allowedOrigins = process.env.NODE_ENV == "production" ? ["https://matkajuju.com","https://www.matkajuju.com"] : ["http://localhost:3000"]
-export default withAuth(function middleware(req) {
-    console.log(req.nextUrl.pathname , "middleware")
-    console.log(req.nextauth.token?.role)
+export default function middleware(req: any) {
+    // console.log(req.nextUrl.pathname , "middleware")
+    // console.log(req.nextauth.token?.role)
     let origin = req.headers.get("origin");
     if(origin && !allowedOrigins.includes(origin)){
 
@@ -20,12 +20,13 @@ export default withAuth(function middleware(req) {
         return NextResponse.rewrite(new URL("/",req.url)) 
     }
     return NextResponse.next()
-},
-{
-    callbacks:{
-        authorized:({token}) => !!token
-    }
-})
+}
+// {
+//     callbacks:{
+//         authorized:({token}) => !!token
+//     }
+// }
+// )
 
 export const config = {
     matcher: [      

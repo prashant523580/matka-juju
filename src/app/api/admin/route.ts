@@ -8,7 +8,7 @@ export async function POST(){
     let adminObj = {
         name:'Matka Juju',
         phone:"08197299",
-        email:"matkajuju@gmail.com",
+        email:"matkajuju@admin.com",
         image:{
             publicId:"khabarpati/y92ben8xvnwt4337tqbv",
             src:"https://res.cloudinary.com/db4vgbevh/image/upload/v1685811299/khabarpati/y92ben8xvnwt4337tqbv.png"

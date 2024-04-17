@@ -100,7 +100,7 @@ function OrdersComponent() {
                                                     <span className='bg-green-400 w-2 p-1 rounded-full h-2'></span>
                                                     :
                                                     <span className='bg-gray-400 w-2     h-2 rounded-full'></span>}
-                                                <p className='ml-0.5'>{status.type} </p>
+                                                <span className='ml-0.5'>{status.type} </span>
                                                 {/* </div> */}
                                             </div>
                                         ))}
@@ -133,7 +133,7 @@ function OrdersComponent() {
                                                 userId: order.user._id
                                             })
                                             setCurrentOrder(order)
-                                        }}>edit</button>
+                                        }}>Edit</button>
                                     </Td>
                                     <Td >
                                         <button onClick={() => {
@@ -144,11 +144,11 @@ function OrdersComponent() {
                                                 userId: order.user._id
                                             })
                                             setCurrentOrder(order)
-                                        }}>view</button>
+                                        }}>View</button>
                                     </Td>
                                 </tr>
                             ))
-                            : <p>Loading</p>
+                            : <tr> <td><p>Loading</p></td> </tr>
                     }
                 </tbody>
             </table>

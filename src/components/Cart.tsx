@@ -84,7 +84,7 @@ export default function Carts({ open, setOpen }: { open: boolean, setOpen: any }
                       <div className="mt-8">
                         <div className="flow-root">
                           <ul role="list" className="-my-6 divide-y divide-gray-200">
-                            {cart?.map((product) => (
+                            {cart.length > 0 ? cart?.map((product) => (
                               <li key={product.product._id} className="flex py-6">
                                 <div className="h-24 w-24 flex-shrink-0 overflow-hidden rounded-md border border-gray-200">
                                   <img
@@ -139,7 +139,13 @@ export default function Carts({ open, setOpen }: { open: boolean, setOpen: any }
                                   </div>
                                 </div>
                               </li>
-                            ))}
+                            ))
+                          :
+                          <div className="div">
+                            <p>Your cart is empty. Please add items to proceed.</p>
+
+                          </div>
+                          }
                           </ul>
                         </div>
                       </div>
@@ -151,6 +157,8 @@ export default function Carts({ open, setOpen }: { open: boolean, setOpen: any }
                         <p>Rs.{subTotal?.toString()}</p>
                       </div>
                       {/* <p className="mt-0.5 text-sm text-gray-500">Shipping and taxes calculated at checkout.</p> */}
+                        {
+                          cart.length>0 &&
                       <div className="mt-6">
                         <Link
                           href="/checkout"
@@ -159,15 +167,16 @@ export default function Carts({ open, setOpen }: { open: boolean, setOpen: any }
                           Checkout
                         </Link>
                       </div>
+                      }
                       <div className="mt-6 flex justify-center text-center text-sm text-gray-500">
                         <p>
-                          or 
+                          or  &nbsp;
                           <button
                             type="button"
                             className="font-medium text-gray-700 hover:text-black"
                             onClick={() => setOpen(false)}
                           >
-                            Continue Shopping
+                             Continue Shopping
                             <span aria-hidden="true"> &rarr;</span>
                           </button>
                         </p>

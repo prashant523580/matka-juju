@@ -40,12 +40,14 @@ export const site = {
     {
       id: 3,
       question: "How much does each size of Juju Dhau cost?",
-      answer: `Our pricing is as follows:<br/>
+      answer: `
+      <div>Our pricing is as follows:<br/>
           <ul style='margin: 0 .4em;'>
           <li> Small matka cup: Rs 60<br/></li>
           <li> Half-liter Matka Juju Dhau: Rs 180</li>
           <li> One-liter Matka Juju Dhau: Rs 340</li>
            </ul>
+           </div>
            `
 
     },

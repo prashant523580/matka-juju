@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { Suspense } from 'react'
 import Login from './LoginComponent'
 
 function page() {
   return (
-    <div><Login/></div>
+    <Suspense fallback={<p>Loading...</p>}><Login/></Suspense>
   )
 }
 

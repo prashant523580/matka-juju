@@ -26,6 +26,8 @@ export const getUserByIdAndDelete = async (_id: string) => {
 export const loginCheckUser = async (email : string,password :string) => {
     
     try{
+        await connectToMongodb()
+
         let user = await User.findOne({
             email : email
         });

@@ -36,7 +36,7 @@ export const authOptions: NextAuthOptions = {
             async authorize(credentials, req) {
                 await connectToMongodb();
                 const { email, password } = credentials as { email: string, password: string };
-                console.log(email, password)
+                // console.log(email, password)
                 if (!email || !password) throw new Error("Please fill all input fields.")
                 let { user, success, message }: any = await loginCheckUser(email, password);
                 if (success === false) {

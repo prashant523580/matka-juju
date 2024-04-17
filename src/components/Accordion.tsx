@@ -25,7 +25,7 @@ const Accordion = styled((props: AccordionProps) => (
 
 const AccordionSummary = styled((props: AccordionSummaryProps) => (
     <MuiAccordionSummary
-        expandIcon={<MdArrowForwardIos sx={{ fontSize: '0.9rem' }} />}
+        expandIcon={<MdArrowForwardIos  />}
         {...props}
     />
 ))(({ theme }) => ({

@@ -13,11 +13,7 @@ export default async function connectToMongodb(){
     }
     try{
 
-        mongoose.connect(`${MONGOOSE_URI+"/"+DATABASE }`,{
-            // dbName: DATABASE,
-            useNewUrlParser : true,
-            useUnifiedTopology: true,
-        } as any).then(() => {
+        mongoose.connect(`${MONGOOSE_URI+"/"+DATABASE }`).then(() => {
             // console.log("connected to mongodb")
             isConnected = true
         }).catch((error) => {

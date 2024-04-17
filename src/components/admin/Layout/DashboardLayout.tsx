@@ -25,8 +25,8 @@ interface DefaultLayoutProps {
 const DashboardLayout = ({ children }: DefaultLayoutProps) => {
   // const dispatch = useDispatch<any>();
   const [sidebarOpen, setSidebarOpen] = React.useState<boolean>(false);
-  const { status, data } = useSession();
-  const router = useRouter();
+  const { status} = useSession();
+  // const router = useRouter();
 
   // React.useEffect(() => {
   //   // console.log(status,data)
@@ -42,7 +42,7 @@ const DashboardLayout = ({ children }: DefaultLayoutProps) => {
       <h1 className='h-[100vh] '>Loading...</h1>
     )
   }
-  if (status === "unauthenticated" || !(data?.user?.role == "admin" || data?.user?.role == "superadmin")) router.replace("/admin/login");
+  if (status === "unauthenticated") redirect("/admin/login");
   //  console.log(data?.user?.role)
 
   return (

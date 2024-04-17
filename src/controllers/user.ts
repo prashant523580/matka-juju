@@ -41,7 +41,7 @@ export const loginCheckUser = async (email : string,password :string) => {
         // console.log(decryptPass);
         if(!(decryptPass === password)){
             return { 
-                message : "Username or password worng.",
+                message : "Username or password wrong.",
                 success: false,
             }
         }
@@ -53,5 +53,9 @@ export const loginCheckUser = async (email : string,password :string) => {
         
     }catch(error){
         console.log(error)
+        return { 
+            message : "Somethings wents wrong.",
+            success: false,
+        }
     }
 }

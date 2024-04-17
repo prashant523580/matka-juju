@@ -160,6 +160,7 @@ export const authOptions: NextAuthOptions = {
         async session({ session, token, user }) {
             try {
                 // Check if session.user is defined before accessing its properties
+                await connectToMongodb()
                 if (session && session.user) {
                     session.user.role = token.role;
                 }

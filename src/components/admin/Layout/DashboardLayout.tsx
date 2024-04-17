@@ -2,7 +2,7 @@
 import * as React from 'react';
 // import Header from '../components/Header';
 import { useSession } from 'next-auth/react';
-import { redirect, useRouter } from 'next/navigation';
+import {  useRouter } from 'next/navigation';
 import Sidebar from './Sidebar';
 import Header from './Header';
 // import { ToastContainer } from 'react-toastify';
@@ -26,7 +26,7 @@ const DashboardLayout = ({ children }: DefaultLayoutProps) => {
   // const dispatch = useDispatch<any>();
   const [sidebarOpen, setSidebarOpen] = React.useState<boolean>(false);
   const { status} = useSession();
-  // const router = useRouter();
+  const router = useRouter();
 
   // React.useEffect(() => {
   //   // console.log(status,data)
@@ -42,7 +42,7 @@ const DashboardLayout = ({ children }: DefaultLayoutProps) => {
       <h1 className='h-[100vh] '>Loading...</h1>
     )
   }
-  if (status === "unauthenticated") redirect("/admin/login");
+  if (status === "unauthenticated") router.replace("/admin/login");
   //  console.log(data?.user?.role)
 
   return (

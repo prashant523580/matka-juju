@@ -5,8 +5,8 @@
 import React from 'react'
 import Form from './Form';
 // import { useAppSelector } from '@/GlobalRedux/hooks/hooks';
-import { ICategoryChild } from '@/types/type';
-import { PaginatedItems } from '@/components/admin/paginate/Pagination';
+// import { ICategoryChild } from '@/types/type';
+// import { PaginatedItems } from '@/components/admin/paginate/Pagination';
 import { uploadImage } from '@/libs/imageUpload';
 import { toast } from 'react-toastify';
 import CustomModal from '@/components/Modal';
